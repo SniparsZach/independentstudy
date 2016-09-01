@@ -32,10 +32,10 @@
     border: 1px solid black;
     left: 20px;
     float: left;
-    width: 250px;
+    width: 270px;
     position: fixed;
-    bottom:10px;
-    left:310px;
+    bottom: 10px;
+    left: 310px;
 }
 
 #sidebar h3 {
@@ -44,10 +44,16 @@
 }
 
 #mainbody {
-    width: 1020px;
+    width: 1000px;
     float: right;
     background-color: #ffffff;
     border: 1px solid black;
+}
+
+#sidebarlinks a {
+    color:black;
+    clear:both;
+    font-weight: bold;
 }
 
 h1 {
@@ -70,5 +76,10 @@ h3 {
 
 p {
     font-family: 'Space Mono', monospace;
-    padding: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
 }
