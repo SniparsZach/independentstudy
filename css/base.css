@@ -27,6 +27,17 @@
     font-family: 'Inconsolata', monospace;
 }
 
+
+#left {
+    width:75%;
+    float:left;
+}
+
+#right {
+    width:25%;
+    float:right;
+}
+
 #sidebar {
     background-color: #ffffff;
     border: 1px solid black;
