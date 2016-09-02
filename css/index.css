@@ -5,3 +5,11 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#notifs {
+    background-color: #ffffff;
+    border: 1px solid black;
+    left: 20px;
+    float: left;
+    width: 270px
+}

@@ -46,7 +46,13 @@
     width: 270px;
     position: fixed;
     bottom: 10px;
-    left: 310px;
+    left: 300px;
+}
+
+#sidebarlinks a {
+    color:black;
+    clear:both;
+    font-weight: bold;
 }
 
 #sidebar h3 {
@@ -59,12 +65,6 @@
     float: right;
     background-color: #ffffff;
     border: 1px solid black;
-}
-
-#sidebarlinks a {
-    color:black;
-    clear:both;
-    font-weight: bold;
 }
 
 h1 {

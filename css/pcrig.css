@@ -5,3 +5,28 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#pcrsidebar {
+    background-color: #ffffff;
+    border: 1px solid black;
+    left: 20px;
+    float: left;
+    width: 270px;
+}
+
+#pcleft {
+    float:left;
+    width:60%;
+    border-top:1px solid black;;
+}
+
+#pcright {
+
+    float:right;
+    width:40%;
+    border-top:1px solid black;
+}
+
+#pcrsmall {
+    font-size: 20px;
+}
