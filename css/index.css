@@ -13,3 +13,7 @@ html {
     float: left;
     width: 270px
 }
+
+#stats {
+    font-size: 18px;
+}
