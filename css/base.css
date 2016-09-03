@@ -94,6 +94,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color:blue;
+}
+
 
 /* Code grabbed from https://codepen.io/shshaw/pen/gsFch/ */
 .navbar2 { position: relative; }
