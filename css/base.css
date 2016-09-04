@@ -27,6 +27,28 @@
     font-family: 'Inconsolata', monospace;
 }
 
+#navbar2 {
+    background-color: #000000;
+    clear: both;
+    text-align: center;
+    padding: 2px;
+}
+
+#navbar2 li {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#navbar2 a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+
 #left {
     width:73%;
     float:left;
@@ -125,15 +147,15 @@ a:visited {
 /* presentational */
 body { padding: 2%; font: 18px/1.4 sans-serif; }
 
-nav a { color: #000000; display: block; padding: 0.5em 1em; text-decoration: none; }
-nav a:hover { color: #000000; }
+nav a { color: #A9A9A9; display: block; padding: 0.5em 1em; text-decoration: none; }
+nav a:hover { color: #2D2D2D; }
 nav ul,
 nav ul li { list-style-type: none; padding: 0; margin: 0; }
 
-nav > ul { background: #000000; text-align: center; }
+nav > ul { background: #2D2D2D; text-align: center; }
 nav > ul > li { display: inline-block; border-left: solid 1px #000000; }
 nav > ul > li:first-child { border-left: none; }
 
 .n2sub-menu {
-  background: #000000;
+  background: #2D2D2D;
 }
