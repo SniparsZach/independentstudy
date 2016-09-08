@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/base.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
@@ -13,7 +14,7 @@
     <title>NVIDIA / AMD / Intel</title>
 </head>
 
-<body>
+<body onload="startTime()">
     <div id="body">
         <h1>NVIDIA / AMD / Intel</h1>
         <h2><center>Welcome!</center></h2>
@@ -31,7 +32,8 @@
             <a href="https://docs.google.com/spreadsheets/d/1qojiQ3QuX4v98_SXrvDoo74ukydB-qZAUex-DwCVzrs/edit?usp=sharing" target="_blank"><p>][ Link to Plan</p></a>
         </div>
         <div id="sidebar">
-            <h3><center>Quicklaunch Sidebar</center></h3>
+            <center><div id="clock"><p id="clocktext">clock</p></div>
+            <h3 id=""><center>Quicklaunch Sidebar</center></h3>
             <div id="sidebarlinks">
                 <a href="nvidiawelcome.html">
                     <p>
@@ -60,6 +62,7 @@
                 <h3 id="stats">NVIDIA Net Worth: $30.39 Billion (September 1, 2016)</h3>
                 <h3 id="stats">AMD Net Worth: $7.128 Billion (September 1, 2016)</h3>
                 <h3 id="stats">Intel Net Worth: $181.33 Billion (September 1, 2016)</h3>
+                <p>NOTE: All images on the sidebar are clickable so be sure to do so when you are here!</p>
             </div>
             <div id="right">
                 <center><img src="pictures/logos/nvidialogo.png" width="90%" alt="nvidialogo"></center>

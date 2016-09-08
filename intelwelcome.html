@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/base.css" type="text/css">
     <link rel="stylesheet" href="css/intel.css" type="text/css">
     <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
@@ -13,7 +14,7 @@
     <title>NVIDIA / AMD / Intel</title>
 </head>
 
-<body>
+<body onload="startTime()">
     <div id="body">
         <h1>NVIDIA / AMD / <div id="tintel">Intel</div></h1>
         <h2><center><div id="tintel">Intel</div></center></h2>
@@ -92,6 +93,7 @@
    
    
         <div id="sidebar">
+            <center><div id="clock"><p id="clocktext">clock</p></div>
             <h3><center>Quicklaunch</center></h3>
             <div id="sidebarlinks">
                 <a href="nvidiawelcome.html">

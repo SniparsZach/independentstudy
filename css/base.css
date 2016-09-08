@@ -83,6 +83,17 @@
     padding-top: 10px;
 }
 
+#clock {
+    border-bottom: 1px solid black;
+    padding-top:7px;
+    padding-bottom: 7px;
+}
+
+#clocktext {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
 #mainbody {
     width: 1000px;
     float: right;
