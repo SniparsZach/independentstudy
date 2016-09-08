@@ -1,12 +1,15 @@
 function startTime() {
     var today = new Date();
+    var month = today.getMonth() + 1;
+    var day = today.getDate();
+    var year = today.getYear() + 1900;
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('clock').innerHTML =
-    h + ":" + m + ":" + s;
+    month + "/" + day + "/" + year + "  |  " + h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
