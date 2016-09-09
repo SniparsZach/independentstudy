@@ -1,6 +1,6 @@
 function startTime() {
-  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   var today = new Date();
+  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   var month = today.getMonth() + 1;
   var day = today.getDate();
   var year = today.getYear() + 1900;
