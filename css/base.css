@@ -1,6 +1,5 @@
 #body {
     width: 90%;
-    float: inline-block;
     margin: auto;
     background-color: #ffffff;
 }
@@ -64,12 +63,12 @@
 #sidebar {
     background-color: #ffffff;
     border: 1px solid black;
-    left: 20px;
     float: left;
-    width: 18.038376383%;
+    width: 17.87063197026022%;
     position: fixed;
     bottom: 10px;
-    left: 7.25%;
+    /*left: 6.82095096582467%;*/
+    left:7.25%;
 }
 
 #sidebarlinks a {
@@ -99,6 +98,7 @@
     float: right;
     background-color: #ffffff;
     border: 1px solid black;
+    padding-bottom: 1%;
 }
 
 #boldtext {

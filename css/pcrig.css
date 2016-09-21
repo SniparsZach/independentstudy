@@ -14,17 +14,26 @@ html {
     width: 20.769230769%;
 }
 
-#pcleft {
-    float:left;
-    width:60%;
+#pcmain {
     border-top:1px solid black;
+    display:inline-block;
 }
 
-#pcright {
+#pcmain p {
+    width:55%;
+    float:left;
+}
 
+#pcmain h3 {
+    width:50%;
+    float:left;
+}
+
+#pcmain img {
     float:right;
-    width:40%;
-    border-top:1px solid black;
+    padding-top:2%;
+    padding-right:1.75%;
+    padding-bottom:1.75%
 }
 
 #pcrsmall {
