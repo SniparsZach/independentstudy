@@ -17,3 +17,9 @@ html {
 #stats {
     font-size: 18px;
 }
+
+#shooterlink {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    font-size: 25px;
+}
