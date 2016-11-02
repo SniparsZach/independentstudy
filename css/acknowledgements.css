@@ -6,7 +6,7 @@ html {
     background-size: cover;
 }
 
-#notifs {
+#ackwelcome {
     background-color: #ffffff;
     border: 1px solid black;
     left: 20px;
@@ -14,25 +14,6 @@ html {
     width: 20.769230769%;
 }
 
-#stats {
-    font-size: 18px;
-}
-
-#link {
-    font-family: 'Open Sans', sans-serif;
-    padding-left: 10px;
-    font-size: 25px;
-}
-
-#bottom-link-l {
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    width:49.88%;
-    float:left;
-}
-
-#bottom-link-r {
-    border-top: 1px solid black;
-    width:50%;
-    float:right;
+#ackwelcome h3 {
+    padding:10px;
 }

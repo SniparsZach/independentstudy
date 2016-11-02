@@ -1,10 +1,16 @@
 var myCanvas = document.getElementById("myCanvas");
-var player = [];
 var amde = [];
+var player = [];
 var ctx = myCanvas.getContext("2d");
 
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
+var img = document.getElementById("fishgameboat");
+
+ctx.moveTo(0,120);
+ctx.lineTo(700,120);
+ctx.stroke();
+ctx.drawImage(img, 200, 55, 210.740741, 90);
 
 function Enemy(xPos, yPos) {
     this.xPos = xPos;
@@ -18,6 +24,7 @@ function Enemy(xPos, yPos) {
     };
     
     this.move = function() {
+
             this.xPos -= -1;
             this.yPos -= 0;           
     };
@@ -26,79 +33,108 @@ function Enemy(xPos, yPos) {
 var wave1 = setInterval(function(){
     
     var tempRand = myCanvas.height;
-    amde.push(new Enemy(0, tempRand));
+    fishs.push(new Fish(0, tempRand));
 
 }, 1500);
 
-    var player = {
-    xPos: 845,
-    yPos: 325,
+var box = {
+    xPos: 270,
+    yPos: 125,
     goLeft: false,
     goRight: false,
     goUp: true,
     goDown: true,
     move: function(){
 
-        if(player.goUp && player.yPos > 0){
+        if(box.goUp && box.yPos > 120){
             this.yPos -= 5;    
         }
-        if(player.goDown && player.yPos < 650){
+        if(box.goDown && box.yPos < 340){
             this.yPos += 5;    
         }
         console.log(this.xPos);
     },
+    draw: function(){
+        ctx.rect(box.xPos,box.yPos,10,10);
+        ctx.fillRect(box.xPos,box.yPos ,10,10);
+        ctx.stroke();
+    }
 }
+
 
 document.addEventListener("keydown", function(evt){
     if(evt.keyCode === 37){
-        player.goLeft = false;
+        box.goLeft = true;
     }
     if(evt.keyCode === 38){
-        player.goUp = false;
+        box.goUp = true;
     }
     if(evt.keyCode === 39){
-        player.goRight = false;
+        box.goRight = true;
     }
     if(evt.keyCode === 40){
-        player.goDown = true;        
+        box.goDown = true;        
     }    
     
 });
 
 document.addEventListener("keyup", function(evt){
     if(evt.keyCode === 37){
-        player.goLeft = false;
+        box.goLeft = false;
     }
     if(evt.keyCode === 38){
-        player.goUp = true;
+        box.goUp = false;
     }
     if(evt.keyCode === 39){
-        player.goRight = false;
+        box.goRight = false;
     }
     if(evt.keyCode === 40){
-        player.goDown = false;        
+        box.goDown = false;        
     }    
 })
 
 function gameLoop() {
     ctx.beginPath();
     ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
-
+    // Draw Background Colors
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillRect(0,0,700,400);
+    ctx.fillStyle = "#668FFF";
+    ctx.fillRect(0,120,700,280);
+    // Draw Boat
+    ctx.drawImage(img, 280, 55, 210.740741, 90);
+    
     ctx.fillStyle = "#000000";
-    player.move();
-    player.draw();
+    box.move();
+    box.draw();
     
     ctx.fillStyle = "#000000";
     ctx.beginPath();
     ctx.moveTo(300,100);
+    ctx.lineTo(275,70);
+    ctx.lineTo(275, box.yPos);
+    ctx.stroke();
 
-    for (var i = 0; i < amde.length; i++) {
-        amde[i].move();
-        amde[i].draw();
-        if(isColliding(amde[i],player)){
-            amde.splice(i,1);
+    for (var i = 0; i < fishs.length; i++) {
+        fishs[i].move();
+        fishs[i].draw();
+        if(isColliding(fishs[i],box)){
+            fishs.splice(i,1);
         }
     }
 
     window.requestAnimationFrame(gameLoop)
 }
+
+// Collision Script
+// Edit collision script where the height of the collision box is limited to the actual box and not to the bottom of the screenm
+function isColliding(box, fishs){
+    console.log(box, fishs);
+    var isLeft = fishs.xPos + fishs.width < box.xPos;
+    var isRight = fishs.xPos > box.xPos + box.width;
+    var isBelow = fishs.yPos + fishs.height < box.yPos;
+    var isAbove = fishs.yPos > box.yPos + box.height;
+    return !(isRight||isLeft||isAbove||isBelow);
+}
+
+gameLoop();
