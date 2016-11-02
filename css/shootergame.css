@@ -10,8 +10,13 @@ html {
 /*http://blog.sklambert.com/html5-canvas-game-panning-a-background*/
 
 canvas {
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				background: url(https://raw.githubusercontent.com/SniparsZach/independentstudy/gh-pages/pictures/backgrounds/amdvnvdi.jpg) no-repeat center center fixed;
+				background: url(https://raw.githubusercontent.com/SniparsZach/independentstudy/gh-pages/pictures/shootergame/backgroundcb.jpg) no-repeat center center fixed;
 			}
+			
+#gamewelcome {
+    background-color: #ffffff;
+    border: 1px solid black;
+    left: 20px;
+    float: left;
+    width: 20.769230769%;
+}
