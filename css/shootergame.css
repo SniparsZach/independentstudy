@@ -1,7 +1,17 @@
 html {
-    background: url(http://static.techspot.com/articles-info/1075/images/Header_01.jpg) no-repeat center center fixed;
+    background: url(https://raw.githubusercontent.com/SniparsZach/independentstudy/gh-pages/pictures/backgrounds/amdvnvdi.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+/*Tutorial for this Javascript game provided by HTML5 Gamer*/
+/*http://blog.sklambert.com/html5-canvas-game-panning-a-background*/
+
+canvas {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: url(https://raw.githubusercontent.com/SniparsZach/independentstudy/gh-pages/pictures/backgrounds/amdvnvdi.jpg) no-repeat center center fixed;
+			}

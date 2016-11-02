@@ -13,7 +13,7 @@
     <title>NVIDIA / AMD / Intel</title>
 </head>
 
-<body onload="startTime()">
+<body onload="startTime(); init();">
     <div id="body">
         <div id="sidebar">
             <center><div id="clock"><p id="clocktext">clock</p></div>
@@ -46,6 +46,17 @@
             <center><h3>AMD Rush</h3></center>
             <center><p>Use the WASD keys to move the ship aorund.</p></center>
             <center><p>Use the SPACEBAR to shoot!</p></center>
+            
+            
+            <!-- The canvas for the panning background -->
+
+	    	<center><canvas id="background" width="700" height="350" style="border:1px solid #000000 ;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas></center>
+
+		<script src="js/shootergame.js"></script>
+		
+		
         </div>
 </body>
 
