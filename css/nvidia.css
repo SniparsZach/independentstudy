@@ -10,3 +10,8 @@ html {
     color: #76b900;
     display:inline-block;
 }
+#countup p {
+display: inline-block;
+padding: 5px;
+margin: 0 0 20px;
+}
