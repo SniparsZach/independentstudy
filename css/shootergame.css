@@ -6,13 +6,9 @@ html {
     background-size: cover;
 }
 
-/*Tutorial for this Javascript game provided by HTML5 Gamer*/
-/*http://blog.sklambert.com/html5-canvas-game-panning-a-background*/
-
-canvas {
-				background: url(https://raw.githubusercontent.com/SniparsZach/independentstudy/gh-pages/pictures/shootergame/backgroundcb.jpg) no-repeat center center fixed;
-				z-index: 1;
-			}
+/*canvas {
+	background: url(https://raw.githubusercontent.com/SniparsZach/independentstudy/gh-pages/pictures/shootergame/backgroundcb.jpg) no-repeat center center fixed;
+			}*/
 			
 #gamewelcome {
     background-color: #ffffff;

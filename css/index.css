@@ -25,14 +25,12 @@ html {
 }
 
 #bottom-link-l {
-    border-top: 1px solid black;
     border-right: 1px solid black;
     width:49.88%;
     float:left;
 }
 
 #bottom-link-r {
-    border-top: 1px solid black;
     width:50%;
     float:right;
 }
