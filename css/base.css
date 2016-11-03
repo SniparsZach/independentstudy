@@ -105,14 +105,19 @@
     font-weight: bold;
 }
 
-#timeline {
-    width:100%;
-    border-top: 1px solid black;
-}
 
 #timelineh2 {
     font-size: 12px;
 }
+
+#itempic {
+    width:40%;
+    float:right;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
 
 h1 {
     font-family: 'Open Sans', sans-serif;
