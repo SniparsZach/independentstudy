@@ -49,13 +49,13 @@
 }
 
 #left {
-    width:73%;
-    float:left;
+    width: 73%;
+    float: left;
 }
 
 #right {
-    width:26%;
-    float:right;
+    width: 26%;
+    float: right;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -68,12 +68,12 @@
     position: fixed;
     bottom: 10px;
     /*left: 6.82095096582467%;*/
-    left:7.25%;
+    left: 7.25%;
 }
 
 #sidebarlinks a {
-    color:blue;
-    clear:both;
+    color: blue;
+    clear: both;
     font-weight: bold;
 }
 
@@ -84,13 +84,12 @@
 
 #clock {
     border-bottom: 1px solid black;
-    padding-top:7px;
+    padding-top: 7px;
     padding-bottom: 7px;
 }
 
 #clocktext {
     font-family: 'Open Sans', sans-serif;
-
 }
 
 #mainbody {
@@ -105,19 +104,16 @@
     font-weight: bold;
 }
 
-
 #timelineh2 {
     font-size: 12px;
 }
 
 #itempic {
-    width:40%;
-    float:right;
+    width: 40%;
+    float: right;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
-
 }
-
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -140,6 +136,7 @@ h3 {
 p {
     font-family: 'Space Mono', monospace;
     padding-left: 10px;
+    padding-right: 10px;
     font-size: 16px;
 }
 
@@ -148,43 +145,74 @@ a {
 }
 
 a:visited {
-    color:blue;
+    color: blue;
 }
 
 
 /* Code grabbed from https://codepen.io/shshaw/pen/gsFch/ */
-.navbar2 { position: relative; }
 
-.n2sub-menu { 
-  visibility: hidden; /* hides sub-menu */
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-2em);
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+.navbar2 {
+    position: relative;
+}
+
+.n2sub-menu {
+    visibility: hidden;
+    /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-2em);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 .navbar2:hover .n2sub-menu {
-  visibility: visible; /* shows sub-menu */
-  opacity: 1;
-  z-index: 1;
-  transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+    visibility: visible;
+    /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
+
 /* presentational */
-body { padding: 2%; font: 18px/1.4 sans-serif; }
 
-nav a { color: #A9A9A9; display: block; padding: 0.5em 1em; text-decoration: none; }
-nav a:hover { color: #2D2D2D; }
+body {
+    padding: 2%;
+    font: 18px/1.4 sans-serif;
+}
+
+nav a {
+    color: #A9A9A9;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2D2D2D;
+}
+
 nav ul,
-nav ul li { list-style-type: none; padding: 0; margin: 0; }
+nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-nav > ul { background: #2D2D2D; text-align: center; }
-nav > ul > li { display: inline-block; border-left: solid 1px #000000; }
+nav>ul {
+    background: #2D2D2D;
+    text-align: center;
+}
+
+nav>ul>li {
+    display: inline-block;
+    border-left: solid 1px #000000;
+}
 
 .n2sub-menu {
-  background: #2D2D2D;
+    background: #2D2D2D;
 }

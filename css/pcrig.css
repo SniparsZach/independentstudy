@@ -15,25 +15,25 @@ html {
 }
 
 #pcmain {
-    border-top:1px solid black;
-    display:inline-block;
+    border-top: 1px solid black;
+    display: inline-block;
 }
 
 #pcmain p {
-    width:55%;
-    float:left;
+    width: 55%;
+    float: left;
 }
 
 #pcmain h3 {
-    width:50%;
-    float:left;
+    width: 50%;
+    float: left;
 }
 
 #pcmain img {
-    float:right;
-    padding-top:2%;
-    padding-right:1.75%;
-    padding-bottom:1.75%
+    float: right;
+    padding-top: 2%;
+    padding-right: 1.75%;
+    padding-bottom: 1.75%
 }
 
 #pcrsmall {
