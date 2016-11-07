@@ -10,7 +10,7 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('clock').innerHTML =
-    days[today.getDay()] + " | " + month + "/" + day + "/" + year + "  |  " + h + ":" + m + ":" + s;
+    "[" + days[today.getDay()] + "] " + "[" + month + "/" + day + "/" + year + "] " + "[" + h + ":" + m + ":" + s + "]";
   var t = setTimeout(startTime, 500);
 }
 
