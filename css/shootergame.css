@@ -6,9 +6,9 @@ html {
     background-size: cover;
 }
 
-canvas {
+/*canvas {
 	background: url(https://raw.githubusercontent.com/SniparsZach/independentstudy/gh-pages/pictures/shootergame/backgroundcb.jpg) no-repeat center center fixed;
-			}
+			}*/
 			
 #gamewelcome {
     background-color: #ffffff;
